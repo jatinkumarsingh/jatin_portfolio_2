@@ -125,7 +125,7 @@ export default function WorkPage() {
                 >
                     <div className="font-mono text-xs font-bold uppercase tracking-[0.3em] text-ink/60 mb-3">Portfolio</div>
                     <h1 className="text-4xl sm:text-6xl md:text-[7rem] font-heading font-bold text-ink leading-[0.85] tracking-tighter uppercase mb-6">
-                        Selected<br />Work
+                        Latest<br />Projects
                     </h1>
                     <p className="font-mono text-sm md:text-base text-ink/85 max-w-xl leading-relaxed">
                         Every project below was shipped for a real user or client. Code is open

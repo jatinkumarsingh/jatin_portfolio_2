@@ -17,7 +17,7 @@ export function ProjectsSection() {
             >
                 <div>
                     <div className="font-mono text-xs font-bold uppercase tracking-[0.3em] text-ink/60 mb-2">Featured · Shipped 2025–2026</div>
-                    <h2 className="font-heading font-bold text-3xl md:text-5xl uppercase tracking-tight text-ink">Selected Work</h2>
+                    <h2 className="font-heading font-bold text-3xl md:text-5xl uppercase tracking-tight text-ink">Latest Projects</h2>
                 </div>
                 <a href="/work" className="font-mono text-sm font-bold uppercase tracking-wider text-ink hover:text-electric transition-colors flex items-center gap-1 group">
                     View All 5 <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
