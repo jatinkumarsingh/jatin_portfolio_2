@@ -24,7 +24,7 @@ export function HeroSection() {
                         <motion.div
                             initial={{ opacity: 0, x: -60 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+                            transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
                         >
                             <div className="font-mono text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-ink/70 mb-4">
                                 Portfolio / {new Date().getFullYear()}
@@ -55,7 +55,7 @@ export function HeroSection() {
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
+                            transition={{ duration: 0.35, delay: 0.1 }}
                             className="flex flex-col items-start md:items-end gap-3"
                         >
                             <a

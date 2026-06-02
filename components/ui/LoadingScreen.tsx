@@ -12,7 +12,7 @@ export default function LoadingScreen() {
         if (!hasVisited) {
             setShow(true);
             sessionStorage.setItem("portfolio-loaded", "true");
-            const timer = setTimeout(() => setShow(false), 2200);
+            const timer = setTimeout(() => setShow(false), 900);
             return () => clearTimeout(timer);
         }
     }, []);
@@ -31,7 +31,7 @@ export default function LoadingScreen() {
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
+                            transition={{ duration: 0.35, delay: 0.1 }}
                         >
                             <div className="font-heading font-bold text-5xl md:text-7xl text-cream uppercase tracking-tighter">
                                 <motion.span
@@ -56,15 +56,15 @@ export default function LoadingScreen() {
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 0.7 }}
+                            transition={{ delay: 0.4, duration: 0.2 }}
                             className="mt-8 w-48 h-[3px] bg-cream/10 mx-auto overflow-hidden"
                         >
                             <motion.div
                                 initial={{ x: "-100%" }}
                                 animate={{ x: "100%" }}
                                 transition={{
-                                    duration: 1,
-                                    delay: 0.8,
+                                    duration: 0.7,
+                                    delay: 0.45,
                                     ease: [0.25, 0.46, 0.45, 0.94],
                                 }}
                                 className="h-full w-full bg-gradient-to-r from-transparent via-acid to-transparent"
@@ -75,7 +75,7 @@ export default function LoadingScreen() {
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 1, duration: 0.5 }}
+                            transition={{ delay: 0.5, duration: 0.25 }}
                             className="mt-4 font-mono text-xs font-bold text-cream/30 uppercase tracking-[0.3em]"
                         >
                             Loading arsenal...
