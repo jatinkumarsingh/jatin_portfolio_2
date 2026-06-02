@@ -52,7 +52,7 @@ export function AboutSection() {
                         <a href="https://github.com/jatin-kumar-singh" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-acid hover:text-ink flex items-center gap-2">
                             <Github size={14} /> GitHub
                         </a>
-                        <a href="https://www.linkedin.com/in/jatin-kumar-singh" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-electric hover:text-cream flex items-center gap-2">
+                        <a href="https://www.linkedin.com/in/jatin-kumar-singh-65b50a355/" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-electric hover:text-cream flex items-center gap-2">
                             <Linkedin size={14} /> LinkedIn
                         </a>
                         <a href="https://codeforces.com/profile/jatin-kumar-singh" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-hotpink hover:text-cream flex items-center gap-2 text-xs">

@@ -122,7 +122,7 @@ export default function ContactPage() {
                                 <Github size={16} /> GitHub
                             </a>
                             <a
-                                href="https://www.linkedin.com/in/jatin-kumar-singh"
+                                href="https://www.linkedin.com/in/jatin-kumar-singh-65b50a355/"
                                 target="_blank" rel="noopener noreferrer"
                                 className="neo-card bg-cream p-4 text-center font-mono text-sm font-bold uppercase hover:bg-electric hover:text-cream transition-all flex items-center justify-center gap-2 group"
                             >
