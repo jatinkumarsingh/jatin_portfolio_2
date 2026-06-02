@@ -111,12 +111,13 @@ export default function RootLayout({
                                 <div className="hidden md:block">
                                     <MagneticButton>
                                         <a
-                                            href="/Jatin_Kumar_Singh_Resume.pdf"
-                                            download="Jatin_Kumar_Singh_Resume.pdf"
+                                            href="/22.pdf"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="flex items-center gap-1 font-mono text-xs font-bold uppercase tracking-wider text-cream/80 hover:text-acid transition-colors px-3 py-2 border-[2px] border-cream/40 hover:border-acid min-h-[40px]"
-                                            aria-label="Download Resume"
+                                            aria-label="View Resume"
                                         >
-                                            CV ↓
+                                            Resume ↓
                                         </a>
                                     </MagneticButton>
                                 </div>

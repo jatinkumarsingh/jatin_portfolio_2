@@ -28,13 +28,10 @@ export default function CommandPalette() {
         { id: "contact", label: "Go to Contact", icon: <Mail size={16} />, action: () => router.push("/contact"), shortcut: "C" },
         {
             id: "resume",
-            label: "Download Resume",
+            label: "View Resume",
             icon: <FileDown size={16} />,
             action: () => {
-                const link = document.createElement("a");
-                link.href = "/Jatin_Kumar_Singh_Resume.pdf";
-                link.download = "Jatin_Kumar_Singh_Resume.pdf";
-                link.click();
+                window.open("/22.pdf", "_blank");
             },
             shortcut: "R",
         },
