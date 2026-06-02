@@ -132,3 +132,143 @@ export function HeaderSection() {
         </section>
     );
 }
+
+export function CategoriesSection() {
+    return (
+        <section className="max-w-7xl mx-auto px-4 md:px-8 mb-12 md:mb-20">
+            <motion.div
+                variants={stagger}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+            >
+                {categories.map((category) => (
+                    <motion.div
+                        key={category.name}
+                        variants={fadeUp}
+                        className={`neo-card ${category.color} ${category.textColor} p-6 flex flex-col justify-between relative overflow-hidden`}
+                    >
+                        <div className="absolute top-0 right-0 w-24 h-24 opacity-10 pointer-events-none">
+                            <GridDots className="w-full h-full" />
+                        </div>
+                        <div className="relative z-10">
+                            <h2 className="font-heading font-bold text-2xl uppercase tracking-tight mb-6 border-b-[3px] border-current pb-2">
+                                {category.name}
+                            </h2>
+                            <div className="space-y-4">
+                                {category.tools.map((tool) => (
+                                    <div
+                                        key={tool.name}
+                                        className="border-b border-current/15 last:border-0 pb-3 last:pb-0"
+                                    >
+                                        <div className="flex items-center justify-between mb-1">
+                                            <span className="font-heading font-bold text-base uppercase tracking-tight">{tool.name}</span>
+                                            <span className="font-mono text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 border border-current rounded-full">
+                                                {depthLabel[tool.depth]}
+                                            </span>
+                                        </div>
+                                        <p className="font-mono text-xs opacity-80 leading-relaxed">{tool.detail}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </motion.div>
+                ))}
+            </motion.div>
+        </section>
+    );
+}
+
+export function CurrentlyLearningSection() {
+    return (
+        <section className="max-w-7xl mx-auto px-4 md:px-8 mb-12 md:mb-20">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="neo-card bg-ink text-cream p-6 md:p-12 relative overflow-hidden"
+            >
+                <div className="absolute inset-0 w-full h-full pointer-events-none opacity-5">
+                    <CircuitPattern className="w-full h-full" />
+                </div>
+                <div className="relative z-10">
+                    <div className="flex items-center gap-2 mb-6">
+                        <BookOpen className="text-acid" size={24} />
+                        <h2 className="font-heading font-bold text-2xl uppercase tracking-tight text-cream">
+                            Currently Learning & Exploring
+                        </h2>
+                    </div>
+                    <p className="font-mono text-sm text-cream/70 max-w-2xl mb-8 leading-relaxed">
+                        Technology never stands still, and neither do I. Here are the concepts and tools I am actively studying or experimenting with right now.
+                    </p>
+                    <div className="grid gap-6 sm:grid-cols-2">
+                        {learning.map((item, idx) => (
+                            <motion.div
+                                key={item.name}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.1, duration: 0.4 }}
+                                className="flex gap-4 items-start p-4 border-[3px] border-cream/10 bg-cream/5 hover:border-acid/30 transition-colors"
+                            >
+                                <div className="font-heading font-bold text-xl text-acid w-8 flex-shrink-0">
+                                    {(idx + 1).toString().padStart(2, "0")}
+                                </div>
+                                <div>
+                                    <h3 className="font-heading font-bold text-lg uppercase tracking-tight text-cream">
+                                        {item.name}
+                                    </h3>
+                                    <p className="font-mono text-xs text-cream/60 mt-1 leading-relaxed">
+                                        {item.reason}
+                                    </p>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </motion.div>
+        </section>
+    );
+}
+
+export function CTASection() {
+    return (
+        <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="max-w-7xl mx-auto px-4 md:px-8"
+        >
+            <div className="neo-card bg-acid text-ink p-8 md:p-12 text-center relative overflow-hidden">
+                <div className="absolute inset-0 w-full h-full pointer-events-none opacity-10">
+                    <GridDots className="w-full h-full" />
+                </div>
+                <div className="relative z-10">
+                    <h2 className="font-heading font-bold text-3xl md:text-5xl uppercase tracking-tight mb-4 text-ink">
+                        Need a custom stack for your project?
+                    </h2>
+                    <p className="font-mono text-sm md:text-base text-ink/80 mb-8 max-w-xl mx-auto leading-relaxed">
+                        I can help architect and build your application from scratch, picking the optimal combination of tools for speed, scalability, and developer experience.
+                    </p>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a
+                            href="/contact"
+                            className="inline-block bg-ink text-cream font-heading font-bold text-lg uppercase tracking-wider px-8 py-4 border-[3px] border-ink shadow-neo hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all hover-shake"
+                        >
+                            Let&apos;s Collaborate
+                        </a>
+                        <a
+                            href="/work"
+                            className="inline-block bg-cream text-ink font-heading font-bold text-lg uppercase tracking-wider px-8 py-4 border-[3px] border-ink hover:bg-ink hover:text-cream transition-colors"
+                        >
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </motion.section>
+    );
+}

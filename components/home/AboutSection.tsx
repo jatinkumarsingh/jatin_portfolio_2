@@ -38,12 +38,12 @@ export function AboutSection() {
                             Aspiring AI<br />Developer
                         </h2>
                         <p className="font-mono text-sm md:text-base text-ink/85 leading-relaxed mb-4">
-                            I'm a passionate generative AI developer skilled in Python and modern web technologies. 
+                            I&apos;m a passionate generative AI developer skilled in Python and modern web technologies. 
                             I build AI-powered applications using machine learning and NLP, with experience in predictive 
                             models and text classification systems. Currently pursuing a BTech in Artificial Intelligence.
                         </p>
                         <p className="font-mono text-sm md:text-base text-ink/85 leading-relaxed">
-                            I've solved 100+ LeetCode problems and built several full-stack projects combining Next.js, 
+                            I&apos;ve solved 100+ LeetCode problems and built several full-stack projects combining Next.js, 
                             React, and AI/ML technologies. Strong problem-solving mindset with a focus on learning and creating 
                             real-world GenAI solutions.
                         </p>
