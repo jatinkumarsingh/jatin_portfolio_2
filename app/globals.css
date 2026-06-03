@@ -614,24 +614,34 @@ body::before {
   color: #FFFDF5;
 }
 
-[data-theme="dark"] .bg-cream {
-  background-color: #1A1A1A;
+[data-theme="dark"] .bg-cream,
+[data-theme="dark"] [class*="bg-cream"] {
+  background-color: #1A1A1A !important;
 }
 
-[data-theme="dark"] .text-ink {
-  color: #FFFDF5;
+[data-theme="dark"] .bg-ink,
+[data-theme="dark"] [class*="bg-ink"] {
+  background-color: #2A2A2A !important;
 }
 
-[data-theme="dark"] .bg-ink {
-  background-color: #2A2A2A;
+[data-theme="dark"] .text-ink,
+[data-theme="dark"] [class*="text-ink"] {
+  color: #FFFDF5 !important;
 }
 
-[data-theme="dark"] .text-cream {
-  color: #FFFDF5;
+[data-theme="dark"] .text-cream,
+[data-theme="dark"] [class*="text-cream"] {
+  color: #FFFDF5 !important;
 }
 
-[data-theme="dark"] .border-ink {
-  border-color: #FFFDF5;
+[data-theme="dark"] .border-ink,
+[data-theme="dark"] [class*="border-ink"] {
+  border-color: #FFFDF5 !important;
+}
+
+[data-theme="dark"] .border-cream,
+[data-theme="dark"] [class*="border-cream"] {
+  border-color: #FFFDF5 !important;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-track {
