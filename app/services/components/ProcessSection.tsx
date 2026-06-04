@@ -28,8 +28,8 @@ export function ProcessSection() {
                 {[
                     { num: "01", title: "Brief", desc: "A 30-minute call to understand the product, users, and constraints. No slides, just questions.", color: "bg-acid", textColor: "text-ink" },
                     { num: "02", title: "Build", desc: "Public repo from day one. You get a running preview URL and review every commit.", color: "bg-ink", textColor: "text-cream" },
-                    { num: "03", title: "Ship", desc: "Production deploy with CI/CD, monitoring, and domain setup. Real users, real feedback.", color: "bg-electric", textColor: "text-cream" },
-                    { num: "04", title: "Support", desc: "I stay on-call for bug fixes and tweaks after launch. No handoff to a stranger.", color: "bg-hotpink", textColor: "text-cream" },
+                    { num: "03", title: "Ship", desc: "Production deploy with CI/CD, monitoring, and domain setup. Real users, real feedback.", color: "bg-ink", textColor: "text-cream" },
+                    { num: "04", title: "Support", desc: "I stay on-call for bug fixes and tweaks after launch. No handoff to a stranger.", color: "bg-acid", textColor: "text-ink" },
                 ].map((step) => (
                     <motion.div key={step.num} variants={fadeUp}>
                         <div className={`neo-card ${step.color} ${step.textColor} p-6 h-full relative overflow-hidden`}>

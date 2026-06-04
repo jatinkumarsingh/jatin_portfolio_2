@@ -25,7 +25,7 @@ export function AboutSection() {
                         priority
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 to-transparent p-6">
-                        <div className="font-mono text-xs font-bold text-cream tracking-widest uppercase">Based in India · Remote worldwide</div>
+                        <div className="text-xs font-bold text-cream tracking-widest uppercase">Based in India · Remote worldwide</div>
                     </div>
                     <div className="absolute top-3 right-3 w-8 h-8 border-[3px] border-ink bg-acid animate-spin-slow" />
                 </div>
@@ -49,7 +49,7 @@ export function AboutSection() {
                         </p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-6 pt-4 border-t-[3px] border-ink/10 relative z-10">
-                        <a href="https://github.com/jatin-kumar-singh" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-acid hover:text-ink flex items-center gap-2">
+                        <a href="https://github.com/jatinkumarsingh" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-acid hover:text-ink flex items-center gap-2">
                             <Github size={14} /> GitHub
                         </a>
                         <a href="https://www.linkedin.com/in/jatin-kumar-singh-65b50a355/" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-electric hover:text-cream flex items-center gap-2">
@@ -58,7 +58,7 @@ export function AboutSection() {
                         <a href="https://codeforces.com/profile/jatin-kumar-singh" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-hotpink hover:text-cream flex items-center gap-2 text-xs">
                             <ExternalLink size={12} /> Codeforces
                         </a>
-                        <a href="https://leetcode.com/jatin-kumar-singh" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-vivid hover:text-cream flex items-center gap-2 text-xs">
+                        <a href="https://leetcode.com/u/Jatin_Kumar_Singh/" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-acid hover:text-ink flex items-center gap-2 text-xs">
                             <ExternalLink size={12} /> LeetCode
                         </a>
                         <a href="mailto:jatin.singh2024@nst.rishihood.edu.in" className="neo-pill bg-ink text-cream hover:bg-electric hover:text-cream flex items-center gap-2">

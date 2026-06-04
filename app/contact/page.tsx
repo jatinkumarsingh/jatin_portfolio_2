@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ContactForm } from "@/components/contact/ContactForm";
 
 import { useState } from "react";
-import { ArrowUpRight, Mail, Send, Loader2, CheckCircle, MapPin, Clock, MessageCircle, Github, Linkedin, ChevronDown } from "lucide-react";
+import { ArrowUpRight, Mail, Send, Loader2, CheckCircle, MapPin, Clock, MessageCircle, Github, Linkedin, ExternalLink, ChevronDown } from "lucide-react";
 import { CircuitPattern, GridDots, CrossHatch } from "@/components/ui/Decorative";
 
 /* ─── Data ─── */
@@ -112,10 +112,10 @@ export default function ContactPage() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="grid grid-cols-2 gap-3"
+                            className="grid md:grid-cols-3 grid-cols-2 gap-3"
                         >
                             <a
-                                href="https://github.com/jatin-kumar-singh"
+                                href="https://github.com/jatinkumarsingh"
                                 target="_blank" rel="noopener noreferrer"
                                 className="neo-card bg-cream p-4 text-center font-mono text-sm font-bold uppercase hover:bg-ink hover:text-cream transition-all flex items-center justify-center gap-2 group"
                             >
@@ -124,9 +124,16 @@ export default function ContactPage() {
                             <a
                                 href="https://www.linkedin.com/in/jatin-kumar-singh-65b50a355/"
                                 target="_blank" rel="noopener noreferrer"
-                                className="neo-card bg-cream p-4 text-center font-mono text-sm font-bold uppercase hover:bg-electric hover:text-cream transition-all flex items-center justify-center gap-2 group"
+                                className="neo-card bg-cream p-4 text-center font-mono text-sm font-bold uppercase hover:bg-ink hover:text-cream transition-all flex items-center justify-center gap-2 group"
                             >
                                 <Linkedin size={16} /> LinkedIn
+                            </a>
+                            <a
+                                href="https://leetcode.com/u/Jatin_Kumar_Singh/"
+                                target="_blank" rel="noopener noreferrer"
+                                className="neo-card bg-cream p-4 text-center font-mono text-sm font-bold uppercase hover:bg-acid hover:text-ink transition-all flex items-center justify-center gap-2 group"
+                            >
+                                <ExternalLink size={16} /> LeetCode
                             </a>
                         </motion.div>
 

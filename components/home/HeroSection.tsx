@@ -14,8 +14,8 @@ export function HeroSection() {
         <section ref={heroRef} className="relative min-h-[80vh] md:min-h-screen flex items-center overflow-hidden">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-20 -right-20 w-72 md:w-[500px] h-72 md:h-[500px] bg-acid/10 rounded-full blur-3xl animate-blob" />
-                <div className="absolute bottom-10 -left-20 w-60 md:w-[400px] h-60 md:h-[400px] bg-electric/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: "2s" }} />
-                <div className="absolute top-1/3 left-1/3 w-48 md:w-[300px] h-48 md:h-[300px] bg-hotpink/8 rounded-full blur-3xl animate-blob" style={{ animationDelay: "4s" }} />
+                <div className="absolute bottom-10 -left-20 w-60 md:w-[400px] h-60 md:h-[400px] bg-acid/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: "2s" }} />
+                <div className="absolute top-1/3 left-1/3 w-48 md:w-[300px] h-48 md:h-[300px] bg-acid/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: "4s" }} />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 w-full relative z-10">
@@ -26,7 +26,7 @@ export function HeroSection() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
                         >
-                            <div className="font-mono text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-ink/70 mb-4">
+                            <div className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-ink/70 mb-4">
                                 Portfolio / {new Date().getFullYear()}
                             </div>
                             <h1 className="text-5xl sm:text-7xl md:text-[8rem] lg:text-[10rem] font-heading font-bold text-ink leading-[0.85] tracking-tighter uppercase">

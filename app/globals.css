@@ -121,7 +121,7 @@ body::before {
    GRADIENT UTILITIES
    ═══════════════════════════════════════════ */
 .gradient-text {
-  background: linear-gradient(135deg, var(--acid) 0%, var(--blue) 50%, var(--pink) 100%);
+  background: linear-gradient(135deg, var(--acid) 0%, #D7FF7F 45%, var(--cream) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -135,7 +135,7 @@ body::before {
 }
 
 .gradient-text-warm {
-  background: linear-gradient(135deg, var(--orange) 0%, var(--pink) 100%);
+  background: linear-gradient(135deg, var(--acid) 0%, #D7FF7F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -152,7 +152,7 @@ body::before {
   left: -3px;
   right: -3px;
   bottom: -3px;
-  background: linear-gradient(135deg, var(--acid), var(--blue), var(--pink), var(--orange));
+  background: linear-gradient(135deg, var(--acid), #D7FF7F, var(--cream));
   background-size: 300% 300%;
   z-index: -1;
   animation: gradient-shift 4s ease infinite;
@@ -170,7 +170,7 @@ body::before {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--acid), var(--blue), var(--pink));
+  background: linear-gradient(90deg, var(--acid), #D7FF7F, var(--acid));
   background-size: 200% 100%;
   animation: gradient-shift 3s ease infinite;
 }

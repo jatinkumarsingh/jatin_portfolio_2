@@ -94,7 +94,7 @@ export const BentoGridItem = ({
         >
             {/* Gradient Highlight Border on Hover */}
             <div className="absolute inset-0 rounded-[inherit] z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                <div className="absolute inset-[-2px] bg-gradient-to-r from-acid via-electric to-hotpink rounded-[inherit] -z-10 animate-gradient" />
+                <div className="absolute inset-[-2px] bg-gradient-to-r from-acid via-acid/80 to-cream rounded-[inherit] -z-10 animate-gradient" />
             </div>
 
             {/* Background Pattern / Header */}

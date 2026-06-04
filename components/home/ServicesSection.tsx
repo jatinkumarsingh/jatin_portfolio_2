@@ -45,10 +45,10 @@ export function ServicesSection() {
                     </div>
                 </motion.div>
                 <motion.div variants={fadeUp}>
-                    <div className="neo-card bg-electric text-cream p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow-blue">
-                        <CircuitPattern className="absolute bottom-0 left-0 w-32 h-32 text-cream/10" />
+                    <div className="neo-card bg-acid text-ink p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow">
+                        <CircuitPattern className="absolute bottom-0 left-0 w-32 h-32 text-ink/10" />
                         <div className="relative z-10">
-                            <Bot size={32} className="mb-4 text-acid" />
+                            <Bot size={32} className="mb-4 text-ink" />
                             <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3">AI Integration</h3>
                             <p className="font-mono text-sm opacity-85 leading-relaxed mb-4">
                                 LLM workflows, custom agents, and RAG pipelines — designed to do one

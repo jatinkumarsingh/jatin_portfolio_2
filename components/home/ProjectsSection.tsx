@@ -47,7 +47,7 @@ export function ProjectsSection() {
                     className="md:col-span-1 md:row-span-2"
                     title="ShopSmart"
                     description="Full-stack e-commerce with Docker · CI/CD · Admin Dashboard"
-                    bgColor="bg-electric"
+                    bgColor="bg-ink"
                     textColor="text-cream"
                     icon={<Activity size={36} className="text-cream" />}
                     href="/work/shopsmart"
@@ -68,13 +68,13 @@ export function ProjectsSection() {
                     className="md:col-span-1"
                     title="News-Credibility-Monitor"
                     description="ML-powered fake news detection · TF-IDF · Logistic Regression · Streamlit"
-                    bgColor="bg-hotpink"
-                    textColor="text-cream"
-                    icon={<Repeat size={28} className="text-cream" />}
+                    bgColor="bg-acid"
+                    textColor="text-ink"
+                    icon={<Repeat size={28} className="text-ink" />}
                     href="/work/news-credibility-monitor"
                     header={
                         <div className="absolute inset-0 pointer-events-none">
-                            <CircuitPattern className="w-full h-full text-cream/15" />
+                            <CircuitPattern className="w-full h-full text-ink/15" />
                         </div>
                     }
                 />
@@ -85,7 +85,7 @@ export function ProjectsSection() {
                     className="md:col-span-1"
                     title="Exam Score Prediction"
                     description="ML regression model · scikit-learn · Streamlit interface"
-                    bgColor="bg-vivid"
+                    bgColor="bg-ink"
                     textColor="text-cream"
                     icon={<Sparkles size={28} className="text-cream" />}
                     href="/work/exam-score-prediction"

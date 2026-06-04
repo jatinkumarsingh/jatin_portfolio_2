@@ -158,7 +158,7 @@ export const projects: Project[] = [
         ],
         color: "bg-acid",
         textColor: "text-ink",
-        link: "https://github.com/jatin-kumar-singh",
+        link: "https://github.com/jatinkumarsingh",
         category: "Learning",
         problem: "Mastering algorithmic problem-solving requires consistent practice and deep understanding of underlying concepts.",
         solution: "Systematic approach to solving increasingly complex problems, studying multiple solution approaches, and analyzing algorithmic complexity for each problem.",

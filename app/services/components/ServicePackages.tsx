@@ -72,7 +72,7 @@ export function ServicePackages() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                 >
-                    <div className="neo-card bg-electric text-cream p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow-blue">
+                    <div className="neo-card bg-ink text-cream p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent">
                         <CircuitPattern className="absolute bottom-0 left-0 w-40 h-40 text-cream/5" />
                         <div className="relative z-10">
                             <div className="flex items-center gap-3 mb-4">

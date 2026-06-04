@@ -184,7 +184,7 @@ export default function WorkPage() {
                             </p>
                         </div>
                         <a
-                            href="https://github.com/jatin-kumar-singh"
+                            href="https://github.com/jatinkumarsingh"
                             target="_blank" rel="noopener noreferrer"
                             className="neo-card bg-cream text-ink px-6 py-3 font-heading font-bold text-sm uppercase tracking-wider flex items-center gap-2 hover:bg-acid transition-colors group flex-shrink-0"
                         >
