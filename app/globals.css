@@ -634,6 +634,15 @@ body::before {
   color: #FFFDF5 !important;
 }
 
+.text-ink-fixed {
+  color: #1A1A1A !important;
+}
+
+[data-theme="dark"] .text-ink-fixed,
+[data-theme="dark"] [class*="text-ink-fixed"] {
+  color: #1A1A1A !important;
+}
+
 [data-theme="dark"] .border-ink,
 [data-theme="dark"] [class*="border-ink"] {
   border-color: #FFFDF5 !important;
@@ -644,6 +653,22 @@ body::before {
   border-color: #FFFDF5 !important;
 }
 
+/* Override for cream-fixed - must come last */
+.bg-cream-fixed {
+  background-color: #FFFDF5 !important;
+}
+
+[data-theme="dark"] .bg-cream-fixed,
+[data-theme="dark"] [class*="bg-cream-fixed"] {
+  background-color: #FFFDF5 !important;
+}
+
+/* Ensure acid stays bright in dark mode */
+[data-theme="dark"] .bg-acid,
+[data-theme="dark"] [class*="bg-acid"] {
+  background-color: #CCFF00 !important;
+}
+
 [data-theme="dark"] ::-webkit-scrollbar-track {
   background: #1A1A1A;
 }
@@ -651,6 +676,23 @@ body::before {
 [data-theme="dark"] ::-webkit-scrollbar-thumb {
   background: #FFFDF5;
   border-color: #1A1A1A;
+}
+
+/* Text that stays dark in both themes for visibility */
+.text-dark {
+  color: #1A1A1A !important;
+}
+
+[data-theme="dark"] .text-dark {
+  color: #1A1A1A !important;
+}
+
+[data-theme="dark"] .text-dark-content {
+  color: #1A1A1A !important;
+}
+
+.text-dark-content {
+  color: #1A1A1A !important;
 }
 
 /* ═══════════════════════════════════════════

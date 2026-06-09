@@ -45,22 +45,22 @@ export default function Home() {
     const [konamiActive, setKonamiActive] = useState(false);
     useKonamiCode(() => setKonamiActive(true));
 
-    const topTags = ["AI Developer", "Machine Learning", "Web · Next.js", "Full Stack", "Remote worldwide"];
+    const topTags = ["AI Developer", "Machine Learning", "Web · Next.js", "Full Stack"];
 
     return (
         <div className={`min-h-screen bg-cream ${konamiActive ? "hue-rotate-180 transition-all duration-1000" : ""}`}>
 
             {/* Top marquee */}
             <div className="w-full bg-acid border-b-[3px] border-ink py-2 overflow-hidden">
-                <div className="marquee-container font-mono font-bold text-ink uppercase tracking-widest text-xs">
+                <div className="marquee-container font-mono font-bold text-ink-fixed uppercase tracking-widest text-xs">
                     <div className="marquee-content animate-marquee">
                         {topTags.map((t) => (
-                            <span key={t} className="px-4 md:px-6">{t}&nbsp;///&nbsp;</span>
+                            <span key={t} className="px-8 md:px-12">{t}&nbsp;///&nbsp;</span>
                         ))}
                     </div>
                     <div className="marquee-content animate-marquee" aria-hidden="true">
                         {topTags.map((t) => (
-                            <span key={`dup-${t}`} className="px-4 md:px-6">{t}&nbsp;///&nbsp;</span>
+                            <span key={`dup-${t}`} className="px-8 md:px-12">{t}&nbsp;///&nbsp;</span>
                         ))}
                     </div>
                 </div>
@@ -95,16 +95,16 @@ export default function Home() {
             <div className="w-full bg-acid border-t-[3px] border-ink py-3 overflow-hidden">
                 <div className="marquee-container font-mono font-bold text-ink uppercase tracking-widest text-sm">
                     <div className="marquee-content animate-marquee-reverse">
-                        <span className="px-6">AI/ML Enthusiast&nbsp;///&nbsp;</span>
-                        <span className="px-6">Open to opportunities&nbsp;///&nbsp;</span>
-                        <span className="px-6">Remote worldwide&nbsp;///&nbsp;</span>
-                        <span className="px-6">100+ LeetCode problems solved&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">AI/ML Enthusiast&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">Open to opportunities&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">Remote worldwide&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">100+ LeetCode problems solved&nbsp;///&nbsp;</span>
                     </div>
                     <div className="marquee-content animate-marquee-reverse" aria-hidden="true">
-                        <span className="px-6">AI/ML Enthusiast&nbsp;///&nbsp;</span>
-                        <span className="px-6">Open to opportunities&nbsp;///&nbsp;</span>
-                        <span className="px-6">Remote worldwide&nbsp;///&nbsp;</span>
-                        <span className="px-6">100+ LeetCode problems solved&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">AI/ML Enthusiast&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">Open to opportunities&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">Remote worldwide&nbsp;///&nbsp;</span>
+                        <span className="px-8 md:px-12">100+ LeetCode problems solved&nbsp;///&nbsp;</span>
                     </div>
                 </div>
             </div>

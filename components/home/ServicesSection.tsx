@@ -24,12 +24,12 @@ export function ServicesSection() {
 
             <div className="grid md:grid-cols-2 gap-5">
                 <motion.div variants={fadeUp}>
-                    <div className="neo-card bg-acid text-ink p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow">
-                        <CrossHatch className="absolute top-0 right-0 w-24 h-24 text-ink opacity-50" />
+                    <div className="neo-card bg-acid text-ink-fixed p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow">
+                        <CrossHatch className="absolute top-0 right-0 w-24 h-24 text-ink-fixed opacity-50" />
                         <div className="relative z-10">
                             <Zap size={32} className="mb-4" />
-                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3">Ship a Product</h3>
-                            <p className="font-mono text-sm opacity-85 leading-relaxed mb-4">
+                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3 text-ink-fixed">Ship a Product</h3>
+                            <p className="font-mono text-sm opacity-85 leading-relaxed mb-4 text-ink-fixed">
                                 End-to-end builds for solo founders and small teams — iOS, web, or both.
                                 You describe the thing; I return a live product on a tight timeline.
                             </p>
@@ -45,12 +45,12 @@ export function ServicesSection() {
                     </div>
                 </motion.div>
                 <motion.div variants={fadeUp}>
-                    <div className="neo-card bg-acid text-ink p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow">
-                        <CircuitPattern className="absolute bottom-0 left-0 w-32 h-32 text-ink/10" />
+                    <div className="neo-card bg-acid text-ink-fixed p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow">
+                        <CircuitPattern className="absolute bottom-0 left-0 w-32 h-32 text-ink-fixed opacity-10" />
                         <div className="relative z-10">
-                            <Bot size={32} className="mb-4 text-ink" />
-                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3">AI Integration</h3>
-                            <p className="font-mono text-sm opacity-85 leading-relaxed mb-4">
+                            <Bot size={32} className="mb-4 text-ink-fixed" />
+                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3 text-ink-fixed">AI Integration</h3>
+                            <p className="font-mono text-sm opacity-85 leading-relaxed mb-4 text-ink-fixed">
                                 LLM workflows, custom agents, and RAG pipelines — designed to do one
                                 job well inside an existing product, not tacked on as a demo.
                             </p>
